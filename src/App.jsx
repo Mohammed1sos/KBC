@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Help from "./pages/help/helpcenter";
+import Devlop from "./pages/dewvelpers/Devlop";
 
 function App() {
   return (
@@ -13,12 +14,16 @@ function App() {
         <Route path="/" exact>
          <Home/>
         </Route>
+        <Route path="/dev" >
+          <Devlop />
+        </Route>
         <Route path="/help" >
           <Help />
         </Route>
         <Route path="/about" >
           <About />
         </Route>
+        
       </Layout>
     </div>
   );

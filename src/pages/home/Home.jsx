@@ -2,10 +2,32 @@ import { motion } from "framer-motion";
 import "./home.css";
 import datalist from "../../components/shared/Dropdown/Dropdata";
 import { Link } from "react-router-dom";
+import { useState ,useEffect } from 'react';
 function Home() {
+// const [xcor,setxcor]=useState(0);
+// const [ycor,setycor]=useState(0);
+// useEffect(()=>
+// {
+
+// },[xcor,ycor])
+// const handelmove=(e)=>
+// {
+//   setxcor(e.clientX);
+//   setxcor(e.clientY);
+// }
+// const handelcler=()=>
+// {
+//   setxcor(0);
+//   setycor(0);
+// }
+
   return (
     <div className="container">
-      <section className="mainhome">
+      <motion.div
+       className="mainhome" 
+      //  onmousemove={handelmove(e)} onmouseout={handelcler()}
+       
+       >
         <div className="main-title">
           <div className="knowlege">
             {" "}
@@ -20,7 +42,7 @@ function Home() {
         <div className="clod2"></div>
         <div className="main-city"></div>
         <div className="main-city-back"></div>
-      </section>
+      </motion.div>
       
       <section className="coleghome">
         <div className="partysvg">
